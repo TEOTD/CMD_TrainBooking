@@ -1,0 +1,290 @@
+package Railway;
+import java.util.*;
+import java.io.*;
+
+public class railway
+{
+String name[]=new String[1000];
+String gen[]=new String[1000];
+static int N;
+int train,cho;int age[]=new int[1000];
+String dj,ds,ss;int code; 
+public void input()
+{
+Scanner in=new Scanner(System.in);
+int i;
+age ob1=new age();
+gender ob2=new gender();
+System.out.println("TRAIN NAME LIST :");
+System.out.println("");
+System.out.println("1.) Agra Express");
+System.out.println("2.) Ahmedabad Express");
+System.out.println("3.) Bangalore Express");
+System.out.println("4.) Bhopal Express");
+System.out.println("5.) Bhubaneswar Express");
+System.out.println("6.) Chennai Express");
+System.out.println("7.) Coimbatore Express");
+System.out.println("8.) Delhi Express");
+System.out.println("9.) Hyderabad Express");
+System.out.println("10.)Howrah Express");
+System.out.println("");
+System.out.println("Enter choice :");
+train=in.nextInt();
+if(train>=11)
+{
+    System.out.println("WRONG CHOICE ,ENTER AGAIN!!!");
+    input();
+}
+System.out.println("Enter coach noumber :");
+code=in.nextInt();
+System.out.println("Enter number of persons :");
+N=in.nextInt();
+for(i=0;i<N;i++)
+{
+System.out.print("Enter person name :"+(i+1)+")");
+name[i]=in.next();
+}
+for(i=0;i<N;i++)
+{
+System.out.print("Enter age: "+(i+1)+")");
+age[i]=in.nextInt();
+}
+for(i=0;i<N;i++)
+{
+System.out.print("Enter gender(Male or Female): "+(i+1)+")");
+gen[i]=in.next();
+}
+if(train==1)
+{
+System.out.println("Destination station :Agra");
+System.out.println("Start station list :");
+System.out.println("");
+System.out.println("1.Ahmedabad");
+System.out.println("2.Bangalore");
+System.out.println("3.Bhopal");
+System.out.println("4.Bhubaneshwar");
+System.out.println("5.Chennai");
+System.out.println("6.Coimbatore");
+System.out.println("7.Delhi");
+System.out.println("8.Hyderabad");
+System.out.println("9.Howrah");
+System.out.println("");
+System.out.println("ENTER CHOICE :");
+cho=in.nextInt();
+if(cho>=10)
+{
+System.out.println("WRONG CHOICE,RE ENTER!!!");
+input();
+}
+} 
+else if(train==2)
+{
+System.out.println("Destination station :Ahmedabad");
+System.out.println("Start station list :");
+System.out.println("");
+System.out.println("1.Agra");
+System.out.println("2.Bangalore");
+System.out.println("3.Bhopal");
+System.out.println("4.Bhubaneshwar");
+System.out.println("5.Chennai");
+System.out.println("6.Coimbatore");
+System.out.println("7.Delhi");
+System.out.println("8.Hyderabad");
+System.out.println("9.Howrah");
+System.out.println("");
+System.out.println("ENTER CHOICE :");
+cho=in.nextInt();
+if(cho>=10)
+{
+System.out.println("WRONG CHOICE,RE ENTER!!!");
+input();
+}
+} 
+else if(train==3)
+{
+System.out.println("Destination station :Bangalore");
+System.out.println("Start station list :");
+System.out.println("");
+System.out.println("1.Agra");
+System.out.println("2.Ahmadabad");
+System.out.println("3.Bhopal");
+System.out.println("4.Bhubaneshwar");
+System.out.println("5.Chennai");
+System.out.println("6.Coimbatore");
+System.out.println("7.Delhi");
+System.out.println("8.Hyderabad");
+System.out.println("9.Howrah");
+System.out.println("");
+System.out.println("ENTER CHOICE :");
+cho=in.nextInt();
+if(cho>=10)
+{
+System.out.println("WRONG CHOICE,RE ENTER!!!");
+input();
+}
+} 
+else if(train==4)
+{
+System.out.println("Destination station :Bhopal");
+System.out.println("Start station list :");
+System.out.println("");
+System.out.println("1.Agra");
+System.out.println("2.Ahmedabad");
+System.out.println("3.Bangalore");
+System.out.println("4.Bhubaneshwar");
+System.out.println("5.Chennai");
+System.out.println("6.Coimbatore");
+System.out.println("7.Delhi");
+System.out.println("8.Hyderabad");
+System.out.println("9.Howrah");
+System.out.println("");
+System.out.println("ENTER CHOICE :");
+cho=in.nextInt();
+if(cho>=10)
+{
+System.out.println("WRONG CHOICE,RE ENTER!!!");
+input();
+}
+}
+else if(train==5)
+{
+System.out.println("Destination station :Bhubaneshwar");
+System.out.println("Start station list :");
+System.out.println("");
+System.out.println("1.Agra");
+System.out.println("2.Ahmedabad");
+System.out.println("3.Bangalore");
+System.out.println("4.Bhopal");
+System.out.println("5.Chennai");
+System.out.println("6.Coimbatore");
+System.out.println("7.Delhi");
+System.out.println("8.Hyderabad");
+System.out.println("9.Howrah");
+System.out.println("");
+System.out.println("ENTER CHOICE :");
+cho=in.nextInt();
+if(cho>=10)
+{
+System.out.println("WRONG CHOICE,RE ENTER!!!");
+input();
+}
+} 
+else if(train==6)
+{
+System.out.println("Destination station :Chennai");
+System.out.println("Start station list :");
+System.out.println("");
+System.out.println("1.Agra");
+System.out.println("2.Ahmedabad");
+System.out.println("3.Bangalore");
+System.out.println("4.Bhopal");
+System.out.println("5.Bhubaneshwar");
+System.out.println("6.Coimbatore");
+System.out.println("7.Delhi");
+System.out.println("8.Hyderabad");
+System.out.println("9.Howrah");
+System.out.println("");
+System.out.println("ENTER CHOICE :");
+cho=in.nextInt();
+if(cho>=10)
+{
+System.out.println("WRONG CHOICE,RE ENTER!!!");
+input();
+}
+} 
+else if(train==7)
+{
+System.out.println("Destination station :Coimbatore");
+System.out.println("Start station list :");
+System.out.println("");
+System.out.println("1.Agra");
+System.out.println("2.Ahmedabad");
+System.out.println("3.Bangalore");
+System.out.println("4.Bhopal");
+System.out.println("5.Bhubaneshwar");
+System.out.println("6.Chennai");
+System.out.println("7.Delhi");
+System.out.println("8.Hyderabad");
+System.out.println("9.Howrah");
+System.out.println("");
+System.out.println("ENTER CHOICE :");
+cho=in.nextInt();
+if(cho>=10)
+{
+System.out.println("WRONG CHOICE,RE ENTER!!!");
+input();
+}
+} 
+else if(train==8)
+{
+System.out.println("Destination station :Delhi");
+System.out.println("Start station list :");
+System.out.println("");
+System.out.println("1.Agra");
+System.out.println("2.Ahmedabad");
+System.out.println("3.Bangalore");
+System.out.println("4.Bhopal");
+System.out.println("5.Bhubaneshwar");
+System.out.println("6.Chennai");
+System.out.println("7.Coimbatore");
+System.out.println("8.Hyderabad");
+System.out.println("9.Howrah");
+System.out.println("");
+System.out.println("ENTER CHOICE :");
+cho=in.nextInt();
+if(cho>=10)
+{
+System.out.println("WRONG CHOICE,RE ENTER!!!");
+input();
+}
+} 
+else if(train==9)
+{
+System.out.println("Destination station :Hyderabad");
+System.out.println("Start station list :");
+System.out.println("");
+System.out.println("1.Agra");
+System.out.println("2.Ahmedabad");
+System.out.println("3.Bangalore");
+System.out.println("4.Bhopal");
+System.out.println("5.Bhubaneshwar");
+System.out.println("6.Chennai");
+System.out.println("7.Coimbatore");
+System.out.println("8.Delhi");
+System.out.println("9.Howrah");
+System.out.println("");
+System.out.println("ENTER CHOICE :");
+cho=in.nextInt();
+if(cho>=10)
+{
+System.out.println("WRONG CHOICE,RE ENTER!!!");
+input();
+}
+} 
+else if(train==10)
+{
+System.out.println("Destination station :Howrah");
+System.out.println("Start station list :");
+System.out.println("");
+System.out.println("1.Agra");
+System.out.println("2.Ahmedabad");
+System.out.println("3.Bangalore");
+System.out.println("4.Bhopal");
+System.out.println("5.Bhubaneshwar");
+System.out.println("6.Chennai");
+System.out.println("7.Coimbatore");
+System.out.println("8.Delhi");
+System.out.println("9.Hyderabad");
+System.out.println("");
+System.out.println("ENTER CHOICE :");
+cho=in.nextInt();
+if(cho>=10)
+{
+System.out.println("WRONG CHOICE,RE ENTER!!!");
+input();
+}
+}  
+//System.out.println("Enter date of journey:-");
+//dj=in.readLine();
+}
+}
